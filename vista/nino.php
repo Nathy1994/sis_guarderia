@@ -104,7 +104,7 @@ INNER JOIN cuidador ON cuidador.cuidador_id=nino.cuidador_id ");
                 <th class="bg-dark text-white" scope="col">ID</th>
                 <th class="bg-dark text-white" scope="col">CUIDADOR</th>
                 <th class="bg-dark text-white" scope="col">NOMBRE DEL NIÑO</th>
-                <th class="bg-dark text-white" scope="col">APELLIDO DEL NIO</th>
+                <th class="bg-dark text-white" scope="col">APELLIDO DEL NIÑO</th>
                 <th class="bg-dark text-white" scope="col">FECHA DE NACIOMIENTO</th>
                 <th class="bg-dark text-white" scope="col">ALERGIAS</th>
                 <th class="bg-dark text-white"></th>
@@ -132,7 +132,7 @@ INNER JOIN cuidador ON cuidador.cuidador_id=nino.cuidador_id ");
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header d-flex justify-content-between">
-                                <h5 class="modal-title w-100" id="exampleModalLabel">Modificar club</h5>
+                                <h5 class="modal-title w-100" id="exampleModalLabel">Modificar cuidador</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -152,9 +152,9 @@ INNER JOIN cuidador ON cuidador.cuidador_id=nino.cuidador_id ");
                                         <select required class="input input__text" name="txtcuidador_id">
                                             <option value="">Seleccione un cuidador</option>
                                             <?php
-                                            while ($club = $cuidador->fetch_object()) {
+                                            while ($cui = $cuidador->fetch_object()) {
 
-                                                echo '<option ' . ($datos->cuidador_id == $club->cuidador_id ? "selected" : "") . ' value="' . $club->cuidador_id . '">' . $club->nombre . '</option>';
+                                                echo '<option ' . ($datos->cuidador_id == $cui->cuidador_id ? "selected" : "") . ' value="' . $cui->cuidador_id . '">' . $cui->nombre . '</option>';
                                             }
                                             ?>
                                         </select>
@@ -165,7 +165,7 @@ INNER JOIN cuidador ON cuidador.cuidador_id=nino.cuidador_id ");
                                     </div>
 
                                     <div class="fl-flex-label mb-4 px-2 col-12">
-                                        <input type="text" placeholder="Deporte" class="input input__text" name="txtapellido" value="<?= $datos->apellido ?>">
+                                        <input type="text" placeholder="Apellido" class="input input__text" name="txtapellido" value="<?= $datos->apellido ?>">
                                     </div>
 
                                     <div class="fl-flex-label mb-4 px-2 col-12">

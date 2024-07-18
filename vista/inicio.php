@@ -47,7 +47,7 @@ if (empty($_SESSION['id'])) {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-between">
-                    <h5 class="modal-title w-100" id="exampleModalLabel">Registrar Club</h5>
+                    <h5 class="modal-title w-100" id="exampleModalLabel">Registrar cuidador</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -114,7 +114,7 @@ if (empty($_SESSION['id'])) {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header d-flex justify-content-between">
-                                <h5 class="modal-title w-100" id="exampleModalLabel">Modificar club</h5>
+                                <h5 class="modal-title w-100" id="exampleModalLabel">Modificar cuidador</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
